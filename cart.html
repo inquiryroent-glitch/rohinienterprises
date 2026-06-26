@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cart | Rohini Enterprises</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo" aria-hidden="true"><span>RE</span></div>
+        <div class="brand-title">
+          <strong>Rohini Enterprises</strong>
+          <small>Commercial Refrigeration & HVAC</small>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="products.html" data-i18n="nav_products">Products</a>
+        <a href="services.html" data-i18n="nav_services">Services</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
+        <a class="cart-link" href="cart.html" data-i18n="nav_cart">Cart <span class="cart-badge" data-cart-count>0</span></a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="hamburger" id="hamburger" type="button" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-panel" id="mobilePanel" aria-label="Mobile menu">
+      <nav>
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="products.html" data-i18n="nav_products">Shop</a>
+        <a href="services.html" data-i18n="nav_services">Services</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+        <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
+        <a class="cart-link" href="cart.html" data-i18n="nav_cart">Cart <span class="cart-badge" data-cart-count>0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container hero-inner">
+      <h1 class="reveal" data-i18n="cart_title">Your Cart</h1>
+      <p class="reveal">Review items and proceed to checkout.</p>
+      <div class="breadcrumbs reveal" aria-label="Breadcrumb">
+        <a href="index.html" data-i18n="crumb_home">Home</a>
+        <span>/</span>
+        <span data-i18n="nav_cart">Cart</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div id="cartRoot" class="reveal"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+      <div class="footer-logo-box">
+  <div class="footer-brand">
+  <a href="index.html" class="footer-logo-link">
+    <img
+      src="images/logo/logoicon.jpeg"
+      alt="Rohini Enterprises"
+      class="footer-logo"
+    />
+  </a>
+
+  <p class="footer-brand-text">
+  Complete Commercial Refrigeration Solutions<br>
+  Delivered Under One Roof
+</p>
+
+  <p class="footer-brand-year">
+    Established in 26 January 2025
+  </p>
+</div>
+</div>
+        <div>
+          <h3 data-i18n="footer_quick">Quick Links</h3>
+          <ul>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="products.html" data-i18n="nav_products">Products</a></li>
+            <li><a href="services.html" data-i18n="nav_services">Services</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="footer_ps">Products & Services</h3>
+          <ul>
+            <li><a href="products.html">Deep Freezers</a></li>
+            <li><a href="products.html">Visi Coolers</a></li>
+            <li><a href="products.html">Cold Rooms</a></li>
+            <li><a href="services.html">AMC & Maintenance</a></li>
+            <li><a href="services.html">Installation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-i18n="footer_contact">Contact</h3>
+        <ul class="footer-contact fancy-icons">
+  <li class="phone">
+    <i class="fa fa-phone"></i>
+    <a href="tel:+918806771333">+91 8806771333</a>
+  </li>
+
+  <li class="email">
+    <i class="fa fa-envelope"></i>
+    <a href="mailto:inquiry.roent@gmail.com">inquiry.roent@gmail.com</a>
+  </li>
+
+  <li class="address">
+    <i class="fa fa-map-marker"></i>
+    <span>
+      Pushpak Nagar, Lokhande Mala,<br>
+      Nashik Road, Nashik,<br>
+      Maharashtra 422006
+    </span>
+  </li>
+</ul>
+
+          <!-- <div class="map" style="margin-top:12px">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7499.187116988075!2d73.82320623843785!3d19.98358807566749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeaa495f6bd31%3A0xc642419899696885!2sPushpak%20Nagar%2C%20Dhara%20Society%2C%20Laxman%20Nagar%2C%20Nashik%20Road%2C%20Nashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1770349697930!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Map"></iframe>
+          </div> -->
+        </div>
+      </div>
+    </div>
+     <!-- Copyright bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="bottom-inner">
+          <p class="copyright" style="text-align:center; color: #fff !important;">
+            &copy; 2026 <strong style="color: #fff;">Rohini Enterprises</strong>. All rights reserved | Designed, Developed & Maintained by
+
+            <a href="https://webakoof.com" target="_blank" rel="noopener noreferrer" style="color: #fff; text-decoration: none;"> <strong>Webakoof</strong> </a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating" aria-label="Floating actions">
+    <a class="float-btn whatsapp" href="https://wa.me/918806771333" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+    </a>
+    <a class="float-btn call" href="tel:+918806771333" aria-label="Call">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1A19.5 19.5 0 0 1 3.2 10.8 19.8 19.8 0 0 1 .1 2.2 2 2 0 0 1 2.1 0h3a2 2 0 0 1 2 1.7c.1.9.3 1.9.6 2.7a2 2 0 0 1-.5 2.1L6.1 7.6a16 16 0 0 0 6.3 6.3l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z" />
+      </svg>
+    </a>
+    <button class="float-btn top" id="scrollTop" type="button" aria-label="Scroll to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 19V5" />
+        <path d="M5 12l7-7 7 7" />
+      </svg>
+    </button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
